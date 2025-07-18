@@ -44,6 +44,15 @@
 
 }
 
+.banner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.equal {
+    width: 50%;
+}
+
 /*header related style*/
  header {
  }
@@ -70,10 +79,7 @@
 
 /*banner*/
 
-.banner {
-    max-width: 1140px;
-    margin: 0 auto;
-}
+
 .banner-contant {
     max-width: 550px;
     margin: 0 auto;
@@ -199,6 +205,65 @@ font-weight: 600;
 
 
 
+/*features spcial styles*/
+
+
+.speacial-card {
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.speacial-features {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 50px;
+    
+}
+.speacial-img img{
+    max-width: 100%;
+}
+
+.special-title {
+    border-left: 4px solid #FF900E;
+    padding-left: 10px;
+}
+
+.speaclcard-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.speaclcard-title h4 {
+  margin: 0 0;
+}
+
+#btn-font1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#btn-font2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn-speacial {
+    position:sticky;
+    margin-top: -150px;
+    margin-left: -60px;
+}
+/*footer styles*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+
+
 
 
 
@@ -208,7 +273,7 @@ font-weight: 600;
 
 /*media quary*/
 @media screen and (max-width:576px){
-    .navbar , .teams {
+    .navbar , .teams   {
         flex-direction: column;
     }
    
@@ -228,8 +293,16 @@ font-weight: 600;
         justify-items: center;
         gap: 30px;
     }
-    .feature-cards {
+    .feature-cards , .speacial-details , .speacial-card {
         justify-items: center;
     }
+    .speacial-features {
+        flex-direction: column-reverse;
+    }
+   .btn-speacial {
+    margin-top: 0;
+    margin-left: 0;
+   }
+
     
 }
