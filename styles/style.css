@@ -17,7 +17,7 @@
 /*shared styles*/
 
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@
 
 .dark-2 {
     color: #424242;
-    font-size: 14px;
+    font-size: 1rem;
 }
 .bg-color {
     background-color: rgba(255, 144, 14, 0.1);
@@ -71,7 +71,7 @@
 /*banner*/
 
 .banner {
-    max-width: 800px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .banner-contant {
@@ -100,10 +100,72 @@
 
 
 
+/*team features styles*/
+
+.teams {
+    align-items: center;
+    gap: 50px;
+    margin: 75px auto;
+
+}
+.team-images {
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+}
+.team-images img {
+    width: 100%;
+}
+
+
+.team-features {
+    max-width: 570px;
+}
+
+.features-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#quicl-list {
+    color: #727272;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+#features {
+    color: #FF900E;
+    font-size: 2.7rem;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*media quary*/
 @media screen and (max-width:576px){
-    .navbar {
+    .navbar , .teams {
         flex-direction: column;
     }
+   
+    .team-images {
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .team-features {
+        max-width: 300px;
+    }
+    .teams {
+        margin: 0 0;
+    }
+
     
 }
